@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/wulfsolter/angular2-signaturepad#readme",
   "dependencies": {
-    "signature_pad": "https://github.com/DynamoEffects/signature_pad.git"
+    "signature_pad": "github:DynamoEffects/angular2-signaturepad"
   },
   "devDependencies": {
     "@angular/common": "2.0.1",
