@@ -10,6 +10,12 @@ var SignaturePad = (function () {
     }
     SignaturePad.prototype.ngAfterContentInit = function () {
         var sp = require('signature_pad');
+        
+        // fix for ionic last version
+        if (sp.constructor.name !== 'Function') {
+            sp = sp.default;
+        }
+
         var canvas = this.elementRef.nativeElement.querySelector('canvas');
         if (this.options['canvasHeight']) {
             canvas.height = this.options['canvasHeight'];
