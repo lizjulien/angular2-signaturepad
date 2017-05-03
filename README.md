@@ -1,3 +1,13 @@
+## What is this fork?
+
+The current npm package of wulfsolter/angular2-signaturepad (as of 2017-05-03) uses an outdated version 1.5.3 of szimek/signature_pad.  Starting at 1.6.0, signature_pad was rewritten in a way that doesn't allow AOT compilation.  This is one of two forks designed to get you up and running until the authors of the original packages resolve this impasse.
+
+```
+npm uninstall --save angular2-signaturepad
+npm install --save https://github.com/DynamoEffects/angular2-signaturepad.git
+```
+
+
 # angular2-signaturepad
 Angular 2 component for [szimek/signature_pad](https://www.npmjs.com/package/signature_pad).
 
